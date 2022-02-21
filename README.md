@@ -1,4 +1,4 @@
-# Do It Today
+# Do It Yourself
 
 **Coding Challenge**
 
