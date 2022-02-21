@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SuccessVC" customModule="Diy" customModuleProvider="target">
+            <connections>
+                <outlet property="btnFinish" destination="R6q-Zp-SIs" id="Awx-so-It9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6q-Zp-SIs">
+                    <rect key="frame" x="30" y="777" width="354" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="4lj-hy-Pmp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Finish">
+                        <color key="titleColor" name="appPrimaryLight"/>
+                    </state>
+                    <connections>
+                        <action selector="handleFinishAction:" destination="-1" eventType="touchUpInside" id="PEb-6H-b2B"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do It Yourself" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gcf-Py-6Yj">
+                    <rect key="frame" x="72" y="421.5" width="270.5" height="53"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="44"/>
+                    <color key="textColor" name="appPrimary"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Done successfully" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXO-2J-Kkl">
+                    <rect key="frame" x="123.5" y="474.5" width="167.5" height="24"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                    <color key="textColor" name="appPrimaryLight"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="R6q-Zp-SIs" secondAttribute="trailing" constant="30" id="Etj-Mv-AyZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="R6q-Zp-SIs" secondAttribute="bottom" constant="30" id="HnZ-bQ-bpg"/>
+                <constraint firstItem="Gcf-Py-6Yj" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Mpf-CR-JmN"/>
+                <constraint firstItem="IXO-2J-Kkl" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="PMr-Vs-e8N"/>
+                <constraint firstItem="Gcf-Py-6Yj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Za5-9Y-ZVX"/>
+                <constraint firstItem="R6q-Zp-SIs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="Ze9-gx-cfQ"/>
+                <constraint firstItem="IXO-2J-Kkl" firstAttribute="top" secondItem="Gcf-Py-6Yj" secondAttribute="bottom" id="f0M-4C-VSe"/>
+            </constraints>
+            <point key="canvasLocation" x="136" y="96"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="appPrimary">
+            <color red="0.012000000104308128" green="0.0" blue="0.50599998235702515" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appPrimaryLight">
+            <color red="0.0" green="0.42399999499320984" blue="0.70999997854232788" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChooseDateVC" customModule="Diy" customModuleProvider="target">
+            <connections>
+                <outlet property="btnBack" destination="lC0-PX-kr1" id="DIO-0M-2vT"/>
+                <outlet property="btnNext" destination="bFJ-iu-gcg" id="8qk-wf-Bwd"/>
+                <outlet property="txtDate" destination="ayt-48-9Dx" id="W4g-Sv-uFa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Date" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bh-3a-Yz3">
+                    <rect key="frame" x="30" y="74" width="354" height="16.5"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                    <color key="textColor" name="lblPrimary"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="textKey" value="profile.fName"/>
+                    </userDefinedRuntimeAttributes>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="28"/>
+                    </variation>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ayt-48-9Dx" customClass="BindingTextField" customModule="Diy" customModuleProvider="target">
+                    <rect key="frame" x="30" y="90.5" width="354" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Qr4-hL-kLW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="8JQ-J0-KL2">
+                    <rect key="frame" x="30" y="777" width="354" height="55"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lC0-PX-kr1">
+                            <rect key="frame" x="0.0" y="0.0" width="169.5" height="55"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Back">
+                                <color key="titleColor" name="appPrimaryLight"/>
+                            </state>
+                            <variation key="heightClass=regular-widthClass=regular">
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                            </variation>
+                            <connections>
+                                <action selector="handleBackAction:" destination="-1" eventType="touchUpInside" id="Zgb-ud-JiC"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFJ-iu-gcg">
+                            <rect key="frame" x="184.5" y="0.0" width="169.5" height="55"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Next">
+                                <color key="titleColor" name="appPrimaryLight"/>
+                            </state>
+                            <variation key="heightClass=regular-widthClass=regular">
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                            </variation>
+                            <connections>
+                                <action selector="handleNextAction:" destination="-1" eventType="touchUpInside" id="adS-h5-IeW"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="o02-VE-Oa0"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5bh-3a-Yz3" secondAttribute="trailing" constant="30" id="Cok-PX-w1l"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8JQ-J0-KL2" secondAttribute="trailing" constant="30" id="GRr-Fv-gfc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ayt-48-9Dx" secondAttribute="trailing" constant="30" id="Hxd-ZV-YO1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="8JQ-J0-KL2" secondAttribute="bottom" constant="30" id="IyW-xn-6nP"/>
+                <constraint firstItem="ayt-48-9Dx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="Mm2-hl-jvt"/>
+                <constraint firstItem="8JQ-J0-KL2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="P0u-mL-8Yd"/>
+                <constraint firstItem="5bh-3a-Yz3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="P4H-21-YF4"/>
+                <constraint firstItem="5bh-3a-Yz3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="f2O-7Y-ede"/>
+                <constraint firstItem="ayt-48-9Dx" firstAttribute="top" secondItem="5bh-3a-Yz3" secondAttribute="bottom" id="m91-VK-pIp"/>
+            </constraints>
+            <point key="canvasLocation" x="133" y="96"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="appPrimaryLight">
+            <color red="0.0" green="0.42399999499320984" blue="0.70999997854232788" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lblPrimary">
+            <color red="0.23137254901960785" green="0.22352941176470589" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
